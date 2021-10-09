@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("assets/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("assets/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Medium.woff2") format("woff2"),
+    url("assets/fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Light.woff2") format("woff2"),
+    url("assets/fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: #f1641e;
+  --gray: #222;
+  --white: #fff;
+  --black: #000;
+  --light-gray: #595959;
+  --lightest-gray: #757575;
+  --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--white);
+  font-family: var(--primary-font);
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.text-lightest-gray {
+  color: var(--lightest-gray);
+}
+
+
+h1,.h1 {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (min-width: 0) {
+  h1,.h1 {
+      font-size:20px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  h1,.h1 {
+      font-size:26px;
+  }
+}
+
+h2,.h2 {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (min-width: 0) {
+  h2,.h2 {
+      font-size:18px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  h2,.h2 {
+      font-size:20px;
+  }
+}
+
+h3,.h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+h4,.h4 {
+  font-size: 16px;
+}
+
+h5,.h5 {
+  font-size: 14px;
+}
+
+h6,.h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.sidebar-wrapper {
+  
+}

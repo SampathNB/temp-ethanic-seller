@@ -1,0 +1,118 @@
+.sidebar {
+    width: 100%;
+    height: 100vh;
+    border-right: 1px solid #E1E3DF;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s ease-in-out;
+    width: 255px;
+}
+
+.sidebar.submenu-active {
+    background-color: #FAF9F5;
+}
+
+.sidebar.submenu-active .sidebar-header .flex-grow-1,
+.sidebar.submenu-active .nav-link span {
+    opacity: 0;
+}
+
+.sidebar-header .flex-grow-1 {
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+.sidebar.sidebar-collapse .sidebar-header .flex-grow-1,
+.sidebar.sidebar-collapse .nav-link span {
+    display: none;
+}
+.sidebar.sidebar-collapse {
+    width: 64px;
+    overflow: visible;
+}
+
+.sidebar.sidebar-collapse .submenu {
+    width: 200px;
+    z-index: -1;
+}
+.sidebar.sidebar-collapse .nav-link svg {
+    margin-right: 0;
+}
+.sidebar.sidebar-collapse .nav-link {
+    padding-right: 0;
+}
+
+.nav-link svg {
+    fill: #757575;
+    margin-right: 12px;
+}
+
+.nav-link,
+.nav-link:focus {
+    display: flex;
+    align-items: center;
+    color: #222;
+    padding: 9px 12px 9px 18px;
+}
+.nav-link span {
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+.nav-link:hover {
+    color: #222;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-link.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-link.active svg {
+    fill: #222;
+}
+
+.submenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    list-style-type: none;
+    width: calc(100% - 64px);
+    background-color: #FFF;
+    padding-top: 18px;
+    transform: translateX(100%);
+    transition: 0.3s all;
+}
+.submenu.active {
+    transform: translateX(0%);
+}
+.sidebar.sidebar-collapse .submenu {
+    transform: translateX(-100%);
+}
+.sidebar.sidebar-collapse .submenu.active {
+    transform: translateX(100%);
+}
+.submenu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.submenu ul a {
+    padding: 11px 12px 11px 18px;
+    color: #222;
+    display: block;
+    text-decoration: none;
+}
+
+.submenu h6 {
+    padding: 11px 12px 11px 18px;
+}
+
+.submenu ul a:hover {
+    padding: 11px 12px 11px 18px;
+    color: #222;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
