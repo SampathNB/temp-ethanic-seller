@@ -71,14 +71,14 @@ export default function Sidebar() {
                         </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="nav-link justify-content-between" onClick={handleSubmenuShow}  >
+                        <a href="#" className="nav-link justify-content-between" onClick={handleSubmenuShow} >
                             <div>
                                 <svg fill="CurrentColor" width="24px" height="24px" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M21,20H3a1,1,0,0,0,0,2H21A1,1,0,0,0,21,20Z"></path><path d="M20,9a1,1,0,0,0-1-1H5a1,1,0,0,0,0,2v7a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2V10A1,1,0,0,0,20,9Zm-7,1v7H11V10h2ZM7,10H9v7H7V10Zm10,7H15V10h2v7Z"></path><path d="M3.406,7.914L12,4.095l8.594,3.819a1,1,0,0,0,.813-1.828l-9-4a1,1,0,0,0-.812,0l-9,4A1,1,0,1,0,3.406,7.914Z"></path></svg>
                                 <span>Finances</span>
                             </div>
                             <svg fill="CurrentColor" width="18px" height="18px"  aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M10,17a1,1,0,0,1-.707-1.707L12.586,12,9.293,8.707a1,1,0,0,1,1.414-1.414L15.414,12l-4.707,4.707A1,1,0,0,1,10,17Z"></path></svg>
                         </a>
-                        <div className={`submenu ${SubmenuShow ? "" : "active"}`}>
+                        <div className={`submenu ${SubmenuShow ? "" : "active"}`} onMouseLeave={handleSubmenuShow} >
                             <h6 class="text-gray-lighter">Finances</h6>
                             <ul class="list-nav icon-b-2">
                                 <li><a class="list-nav-item" href="#">Payment account

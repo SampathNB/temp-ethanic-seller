@@ -34,6 +34,7 @@
 .sidebar.sidebar-collapse .submenu {
     width: 200px;
     z-index: -1;
+    z-index: 9;
 }
 .sidebar.sidebar-collapse .nav-link svg {
     margin-right: 0;
